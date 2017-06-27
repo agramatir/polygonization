@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<script type="text/javascript" src="js/intersect.js"></script>
+		<script type="text/javascript" src="js/polygonization.js"></script>
+		<script type="text/javascript" src="js/ch.js"></script>
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<title>Computing Geometry Lab</title>
+		<style>
+		.points{
+			fill:steelblue;
+		}
+
+		.selected, {
+			fill:none;
+			stroke-width:3;
+			stroke:green ;
+			stroke-opacity:0.7;
+		}
+
+		polyline, .ray{
+			fill:none;
+			stroke-width:3;
+			stroke:green;
+			stroke-opacity:0.4;
+		}
+		
+		.sweepline{
+			stroke:purple;
+			stroke-width: 5;
+		}
+
+		.header {
+			background-color:#013220;
+			box-shadow:0 1px 1px #ccc;
+			padding: 20px 40px;
+			height: 100px;
+			color: #ffffff;
+			box-sizing: border-box;
+			top:-100px;
+
+			-webkit-transition:top 0.3s;
+			transition:top 0.3s;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			margin: 8px;
+		}
+
+		.menu {
+			padding: 16px;
+		}
+
+		.hidden {
+			display: none;
+		}
+
+		p {
+			color: #000000;
+		}
+	</style>
+	</head>
+	<body>
+	<div class="header">
+		<h3>Computation geometry Lab </h3>
+		<h2>Random polygon generation</h2>
+		<div style="text-align:right;margin-top:-20px"><a href="index.html" style="color:white;">Home</a></h3>
+	</div>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+
+
+	<p>In this lab, we deal with the random generation of simple polygons on a given set of points. Since no polynomial-time solution is known for the uniformly random generation of simple polygons, we focus on heuristics that offer a good time complexity and still generate a rich variety of different polygons. Also considered approaching minimum area polygonization.</p>
+
+	<p>Written by Marharyta Lytvynenko, Kyiv, 2017</p>
+	<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>
